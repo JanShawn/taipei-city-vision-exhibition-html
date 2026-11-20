@@ -1,0 +1,14 @@
+/* 基本樣式獨立保存，取代原專案由 Tailwind 提供的重設。 */
+*, ::before, ::after { box-sizing: border-box; border: 0 solid; }
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; }
+body, h1, h2, h3, h4, p, dl, dd, figure { margin: 0; }
+h1, h2, h3, h4 { font-size: inherit; font-weight: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; letter-spacing: inherit; }
+button { padding: 0; background: transparent; }
+a { color: inherit; text-decoration: inherit; }
+img, svg { display: block; vertical-align: middle; }
+img { max-width: 100%; height: auto; }
+ol, ul { list-style: none; padding: 0; margin: 0; }
+b, strong { font-weight: bolder; }
+small { font-size: 80%; }
+[hidden] { display: none !important; }

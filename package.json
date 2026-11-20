@@ -1,0 +1,12 @@
+{
+  "name": "taipei-city-vision-exhibition-html",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "台北城市探索指南：純 HTML、CSS、JavaScript 多頁版本",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}
