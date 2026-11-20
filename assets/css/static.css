@@ -6,7 +6,6 @@ a:focus-visible, [role="button"]:focus-visible { outline: 3px solid var(--cyan);
 .detail-copy { overflow-y: auto; overscroll-behavior: contain; }
 .qr-code svg { width: 108px; height: 108px; }
 .qr-code a { display: block; background: white; }
-.filter-row button[aria-pressed="true"] { color: var(--cyan); }
 .vote-confirmation-overlay { animation: vote-card-arrive 240ms ease both; }
 .no-script { position: fixed; inset: 0; z-index: 200; display: grid; place-content: center; gap: 16px; padding: 36px; color: white; background: #050d15; }
 .no-script a { color: #67e8d5; text-decoration: underline; }
