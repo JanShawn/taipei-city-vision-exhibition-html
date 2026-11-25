@@ -19,7 +19,7 @@ for (const page of pages) {
   for (const target of pages) assert.ok(html.includes(`href="${target === "index.html" ? "./" : target}"`), `${page} 缺少 ${target} 導覽`);
   for (const [, path] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     if (/^https?:/.test(path)) continue;
-    await access(resolve(root, path));
+    await access(resolve(root, path.split(/[?#]/, 1)[0]));
   }
   assert.doesNotMatch(html, /v-if|v-for|@click|<nuxt|<component|type="module"/i);
 }

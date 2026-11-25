@@ -2127,6 +2127,12 @@ a:focus-visible {
   align-items: center;
   padding-top: 16px;
 }
+
+/* 補償中文字形與 SVG 的視覺中心差異，讓路線箭頭稍微上移。 */
+.routes-screen .route-link > svg {
+  flex-shrink: 0;
+  transform: translateY(-2px);
+}
 /* Ellipsis and compact route copy */
 .content-screen:not(.vision-screen):not(.routes-screen) .place-body > span {
   text-overflow: ellipsis;
