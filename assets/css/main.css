@@ -2124,7 +2124,7 @@ a:focus-visible {
 
 .routes-screen .route-link {
   min-height: 38px;
-  align-items: flex-end;
+  align-items: center;
   padding-top: 16px;
 }
 /* Ellipsis and compact route copy */
