@@ -1,3 +1,13 @@
+// 觸控展示裝置鎖住雙指縮放，保留單指捲動與點擊。
+document.addEventListener('touchmove', event => {
+  if (event.touches.length > 1) event.preventDefault();
+}, { passive: false });
+
+// 補上 Safari 的手勢事件，避免裝置忽略 viewport 的縮放限制。
+['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
+  document.addEventListener(type, event => event.preventDefault(), { passive: false });
+});
+
 window.ExhibitionReady = (async function () {
   'use strict';
 

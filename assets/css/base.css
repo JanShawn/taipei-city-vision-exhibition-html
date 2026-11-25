@@ -1,6 +1,6 @@
 /* 基本樣式獨立保存，取代原專案由 Tailwind 提供的重設。 */
 *, ::before, ::after { box-sizing: border-box; border: 0 solid; }
-html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; }
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; touch-action: pan-x pan-y; }
 body, h1, h2, h3, h4, p, dl, dd, figure { margin: 0; }
 h1, h2, h3, h4 { font-size: inherit; font-weight: inherit; }
 button, input, select, textarea { font: inherit; color: inherit; letter-spacing: inherit; }

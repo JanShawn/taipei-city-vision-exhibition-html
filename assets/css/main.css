@@ -2081,7 +2081,7 @@ a:focus-visible {
 
 .content-screen:not(.vision-screen):not(.routes-screen) .place-body b {
   min-height: 30px;
-  align-items: flex-end;
+  align-items: center;
   padding-top: 12px;
 }
 

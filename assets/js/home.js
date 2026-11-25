@@ -13,7 +13,6 @@
     document.getElementById('hero-image').classList.add('hero-background');
     document.getElementById('hero-credit').textContent = `影像：${hero.imageCredit || '政府開放資料'}${hero.imageSourcePlace ? `｜來源紀錄：${hero.imageSourcePlace}` : ''}`;
   }
-  document.getElementById('data-date').textContent = (E.data.meta.attractionUpdatedAt || '').slice(0, 10);
   document.getElementById('stories').innerHTML = featured.length ? featured.map((item, index) => `
     <button class="story-card${index === 0 ? ' featured' : ''}" type="button" ${E.placeAttributes(item)}>
       ${E.image(item)}<span class="story-shade"></span><span class="story-copy">
